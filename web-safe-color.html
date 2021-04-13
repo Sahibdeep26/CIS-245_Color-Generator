@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Models</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container"><br>
+        <br>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-sd" id="myVar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">Color Models </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsibleNavbar"">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav navbar-right" id="nav">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="rgb.html">RGB</a></li>
+                        <li class="nav-item"><a href="cmyb.html">CMY</a></li>
+                        <li class="nav-item active"><a href="web-safe-color.html">Web safe Colors</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>                  
+                    </ul>   
+                </div>  
+            </div>       
+        </nav>
+    </div> 
+
+    <hr style="color:#CCCCCC; width:800px;"></hr>
+    
+    <div class="container" style="border:solid #0FF thin; padding-bottom:20px; border-radius:10px;width:800px;" >
+        <div class="row bg-info">
+            <h3 style="color:#09F; padding-top:5px; padding-left:40px; padding-bottom:5px; border-radius:10px;">Web Safe Colors</h3>
+        </div>
+        
+        <div class="alert alert-white">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="first">
+                <p><em>Web Safe colors</em> consist of <em>216</em> colors that display solid, non-dithered and consistent on any 
+                computer<br>monitor or web browser, capable of displaying at least 8-bit color (256 colors).</p>
+            </div>
+        </div>
+    </div>
+    
+         
+    <br>
+    <br>
+         
+    <div class="row text-center">
+        <button type="button" id="change" class="btn btn-info" onclick="displaySafeColors();">Display Web Safe Colors</button>
+    </div>
+
+    <br>
+
+    <table class="table table-stripped text-center" style="width: 50%;margin-left: auto;margin-right: auto;" id="output">
+        <thead class="text-dark text-info">
+        
+        </thead>
+    </table>
+
+    <br>
+    <br>
+    
+    <div class="row text-center">
+        <kbd>
+            <b>
+                &copy; 2018. M.Bougerra. All Rights Reserved.
+            </b>
+        </kbd>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/Script.js" type="text/javascript"></script>
+</body>
+</html>

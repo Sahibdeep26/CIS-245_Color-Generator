@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Models</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body onload="rgb(); colorblue_setValues();">
+    
+    <div class="container">
+        <br>
+        <br>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-sd">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>   
+                    <a href="index.html" class="navbar-brand">Color Models </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item active"><a href="rgb.html">RGB</a></li>
+                        <li class="nav-item"><a href="cmyb.html">CMY</a></li>
+                        <li class="nav-item"><a href="web-safe-color.html">Web safe Colors</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>                  
+                    </ul>   
+                </div>         
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+           <blockquote>
+               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="border:#F00 solid thin; padding:0px; position:relative; margin-bottom: 20px; left: -10px">       
+                    <div class="alert alert-danger" style="border-bottom:#F00 solid thin">
+                        <p>
+                            <b><span class="red">Red</span> <span class="green">Green</span> <span class="blue">Blue </span> (<span class="red">R</span><span class="green"	
+                            >G</span><span class="blue">B</span>)</b>
+                        </p>
+                    </div>
+                      
+                    <div style="padding: 5px;">
+                        <p>
+                            <span class="red">R</span><span class="green">G</span><span class="blue">B</span> is an additive color projected light color model where each color is stored in one byte.<br>
+                                All possible combinations of <b><span class="red">red</span>, <span class="green">green</span></b> and <b><span class="blue">blue </span></b> give 2<sup>24</sup>=16,777,216 different colors.
+                            </p>
+                            <p>
+                                Starting with (<b><span class="red">Red</span>, <span class="green">Green</span>, <span class="blue">Blue </span></b>)=<b>(<span class="red">0</span>, <span class="green">0</span>, <span class="blue">0</span>)</b>(black), to which different color "lights" are added to produce visible colors.
+                            </p> 
+                    </div>
+            	</div>
+
+                
+            	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="border:#0F0 solid thin; padding:0px;  position: relative; margin-bottom: 20px; left: -10px;">
+                    <div class="alert alert-success" style="border-bottom:#0F0 solid thin;">
+                        <p>
+                            <b>
+                                <span class="red">Red</span> 
+                                <span class="green">Green</span> 
+                                <span class="blue">Blue</span> 
+                                (<span class="red">R</span><span class="green">G</span><span class="blue">B</span>)
+                            </b>
+                        </p>
+                    </div>
+                        
+                    <div style="padding:10px;">
+                        <h3>Select<b><span class="red"> R</span><span class="green">G</span><span class="blue">B</span></b> values:</h3><br>
+                        <b> 
+                            <span class="red">Red</span> <select id="r" name="numbers" onchange="displayRGBColor()"></select>  
+                            <span class="green">Green</span> <select id="g" name="numbers" onchange="displayRGBColor()"></select>
+                            <span class="blue">Blue</span>  <select id="b" name="numbers" onchange="displayRGBColor()"></select>
+                        </b>
+                        <br>
+                        <br>
+                        <hr>
+                            <table class="table table-stripped text-center" id="output">
+                                <thead class="text-white bg-info">
+                                    <tr>
+                                        <th><span class="red">R</span><span class="green">G</span><span class="blue">B</span> Float Values</th>
+                                        <th><span class="red">R</span><span class="green">G</span><span class="blue">B</span> Hexadecimal Values</th>
+                                        <th>Display</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                    </div>
+                </div>
+          </blockquote> 
+        </div>
+        <br>
+        <br>
+
+        <div class="text-center">
+            <button type="button" id="change" class="btn btn-info" onclick="generateRandomColors()">Generate Random Colors</button>
+        </div>
+
+    </div>
+
+    <div class="row text-center"><br>
+        <br>
+        <kbd><b>
+            &copy; 2018. M.Bougerra. All Rights Reserved.</b>
+        </kbd> 
+   	</div> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>   
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/Script.js" type="text/javascript"></script>
+</body>
+</html>
